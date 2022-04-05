@@ -1,0 +1,37 @@
+.signIn {
+  text-align: right;
+}
+
+.signInMsg {
+  display: inline-block;
+  color: gray;
+  font-size: 14px;
+}
+
+.signIn a {
+  border: 2px solid lightgray;
+  margin-left: 10px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.signUpForm {
+  margin: 50px 0;
+}
+
+.registerBtn {
+  display: block;
+  width: auto;
+  padding: 15px;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  background-color: rgb(118, 49, 116);
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px lightgray;
+}
+
+.registerBtn:hover {
+  box-shadow: 0px 0px 10px rgb(217, 135, 250);
+}

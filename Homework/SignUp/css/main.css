@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/background2.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+label, input, .loginBtn {
+  display: block;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+}
+
+input {
+  width: 370px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+input:focus {
+  border-color: purple;
+  outline: none;
+  box-shadow: 0px 0px 5px rgb(228, 174, 249);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.wrapper {
+  width: auto;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.info {
+  width: 350px;
+  padding: 30px;
+  background-image: url(../images/info.avif);
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.login {
+  width: 400px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.signUp {
+  text-align: right;
+}
+
+.signUpMsg {
+  display: inline-block;
+  color: gray;
+  font-size: 14px;
+}
+
+.signUp a {
+  border: 2px solid lightgray;
+  margin-left: 10px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.loginForm {
+  margin: 50px 0;
+}
+
+.findPW {
+  display: inline-block;
+  margin-top: 20px;
+  color: gray;
+  font-size: 14px;
+}
+
+.loginBtn {
+  width: auto;
+  padding: 15px;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  background-color: rgb(118, 49, 116);
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px lightgray;
+}
+
+.loginBtn:hover {
+  box-shadow: 0px 0px 10px rgb(217, 135, 250);
+}
+
+.socialLogin {
+  color: gray;
+  vertical-align: middle;
+}
+
+.socialLogin a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid lightgray;
+  color: white;
+  /* 이미지 스프라이트 기법 => 웹 성능 */
+  background-image: url(../images/icon_sprites.png);
+  text-indent: -9999px; /* IR 기법 */
+  background-size: 133px 90px;
+}
+
+.socialLogin .facebook {
+  background-position: 172px -3px;
+}
+
+.socialLogin .google {
+  background-position: 81px -3px;
+}
+
+.socialLogin .facebook:hover {
+  border-color: dodgerblue;
+  transition: 0.3s;
+  box-shadow: 0px 0px 5px lightblue;
+}
+
+.socialLogin .google:hover {
+  border-color: gray;
+  transition: 0.3s;
+  box-shadow: 0px 0px 5px lightgray;
+
+}

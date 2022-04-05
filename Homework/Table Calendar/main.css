@@ -1,0 +1,56 @@
+body, h1 {
+  margin: 0;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 90px;
+  color: rgb(200, 51, 51);
+}
+
+header p {
+  float: right;
+  text-align: right;
+  color: gray;
+  font-size: 17px;
+}
+
+table {
+  margin-left: 45px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 20px;
+}
+
+caption {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+table.april, table.june {
+  margin-right: 20px;
+}
+
+table.april, table.may {
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 5px;
+}
+
+td:nth-child(1), th:nth-child(1), td.holiday {
+  color: red;
+}
