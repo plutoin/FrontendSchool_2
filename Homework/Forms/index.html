@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1>나와 잘 맞는 회사는?</h1>
+      <p class="info">가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없다.</p>
+    </header>
+    <form action="">
+      <!-- 회사 고르기 -->
+      <fieldset>
+        <p>다음 문자 중에 왠지 마음에 드는 것을 하나 고르세요.</p>
+        <input type="radio" name="text" id="naver" required>
+        <label class="checkLabel" for="naver">네</label><br>
+        <input type="radio" name="text" id="kakao">
+        <label class="checkLabel" for="kakao">카</label><br>
+        <input type="radio" name="text" id="line">
+        <label class="checkLabel" for="line">라</label><br>
+        <input type="radio" name="text" id="coupang">
+        <label class="checkLabel" for="coupang">쿠</label><br>
+        <input type="radio" name="text" id="jejucodingcamp">
+        <label class="checkLabel" for="jejucodingcamp">베</label>
+      </fieldset>
+      <!-- 메신저 고르기 -->
+      <fieldset>
+        <p>친구와 문자를 합니다. 다음 중 어떤 메신저를 이용하시겠습니까? 모두 골라 주세요.</p>
+        <input type="checkbox" name="kakaotalk" id="kakaotalk">
+        <label class="radioLabel" for="kakaotalk">카카오톡</label><br>
+        <input type="checkbox" name="line" id="line_messenger">
+        <label class="radioLabel" for="line_messenger">라인</label><br>
+        <input type="checkbox" name="instagram" id="instagram">
+        <label class="radioLabel" for="instagram">인스타그램 디엠</label><br>
+        <input type="checkbox" name="nateon" id="nateon">
+        <label class="radioLabel" for="nateon">네이트온</label><br>
+        <input type="checkbox" name="buddybuddy" id="buddybuddy">
+        <label class="radioLabel" for="buddybuddy">버디버디</label>
+      </fieldset>
+      <!-- 면접 -->
+      <fieldset>
+        <p>면접에서 자신의 포부를 한 문장으로 얘기한다면?</p>
+        <input type="text" name="interview" placeholder="내 답변" required>
+      </fieldset>
+      <!-- 최종면접 -->
+      <fieldset>
+        <p>당신은 지금 한 기업의 최종 면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해 주고 싶은 말은?</p>
+        <textarea cols="90" rows="1" placeholder="내 답변"></textarea>
+
+      </fieldset>
+      <!-- 듣고 싶지 않은 질문 -->
+      <fieldset>
+        <p>다음 중 기술 면접 때 듣고 싶은 질문이 아닌 것은?</p>
+        <select name="question" id="question" class="question">
+          <option value="" selected>선택</option>
+          <option value="question1">질문 1</option>
+          <option value="question2">질문 2</option>
+          <option value="question3">질문 3</option>
+        </select>
+      </fieldset>
+      <!-- 취업 희망 날짜 -->
+      <fieldset>
+        <p>취업을 희망하는 날짜를 선택해 주세요.</p>
+        <label for="date" class="dateLabel">날짜</label>
+        <input type="date" id="date" required>
+      </fieldset>
+      <!-- 업무 시작 시간 -->
+      <fieldset>
+        <p>업무를 시작하기에 가장 적당한 시간을 고르세요.</p>
+        <label for="time" class="timeLabel">시간</label>
+        <input type="number" id="time" min="0" max="12" required>
+        :
+        <input type="number" min="0" max="59" required>
+        <select name="ampm" id="ampm" class="ampm">
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+        </select>
+      </fieldset>
+      <!-- 버튼 -->
+      <input type="submit" class="submit" value="제출">
+      <input type="reset" class="reset" value="양식 지우기">
+    </form>
+  </div>
+</body>
+
+</html>
