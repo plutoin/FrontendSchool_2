@@ -117,8 +117,13 @@ a {
 }
 
 .socialLogin {
+  display: flex;
+  align-items: center;
+}
+
+.socialLogin span {
   color: gray;
-  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .socialLogin a {
@@ -136,6 +141,7 @@ a {
 
 .socialLogin .facebook {
   background-position: 172px -3px;
+  margin-right: 5px;
 }
 
 .socialLogin .google {
