@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AA8BA,AAAA,KAAK,CAAC;EA1BF,MAAM,EAAE,CAAC;EACT,KAAK,EAAE,CAAC;EAGR,YAAY,EAAE,KAAK;EACnB,YAAY,EAAE,KAAK;EACnB,YAAY,EAAE,KAAS;EAanB,kBAAkB,EAQC,KAAK;EAPxB,YAAY,EAAE,OAClB;CAOH",
     "sources": [
-        "025.scss"
+        "025_if_elseif_else.scss"
     ],
     "names": [],
-    "file": "025.css"
+    "file": "025_if_elseif_else.css"
 }

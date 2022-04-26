@@ -1,25 +1,28 @@
 ul {
-    li {
-        &:hover {
-        background: white;
-        cursor: pointer;
-        }
-        &:last-child {
-        border-bottom: 2px solid black;
-        }
-    }
+	li {
+		&:hover {
+			background: white;
+			cursor: pointer;
+		}
+
+		&:last-child {
+			border-bottom: 2px solid black;
+		}
+	}
 }
 
 ol {
-    li {
-        &:nth-child(1) {
-            color: salmon;
-        }
-        &:nth-child(2) {
-            color:seagreen;
-        }
-        &:nth-child(3) {
-            color:lightblue;
-        }
-    }
+	li {
+		&:nth-child(1) {
+			color: salmon;
+		}
+
+		&:nth-child(2) {
+			color: seagreen;
+		}
+
+		&:nth-child(3) {
+			color: lightblue;
+		}
+	}
 }

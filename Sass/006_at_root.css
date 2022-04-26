@@ -1,12 +1,11 @@
 .one {
-  color: red;
+  color: salmon;
 }
 
 .one .two {
-  color: blue;
+  color: lightblue;
 }
 
 .three {
-  color: green;
+  color: seagreen;
 }
-/*# sourceMappingURL=006_at_root.css.map */

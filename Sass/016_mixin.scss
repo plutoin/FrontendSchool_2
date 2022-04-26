@@ -5,9 +5,9 @@
 }
 
 .card-red {
-    @include box(red);
+    @include box(salmon);
 }
 
 .card-blue {
-    @include box(blue);
+    @include box(skyblue);
 }

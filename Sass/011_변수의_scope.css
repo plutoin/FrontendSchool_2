@@ -1,12 +1,11 @@
 .one {
-  color: red;
+  color: salmon;
 }
 
 .one .two {
-  color: red;
+  color: salmon;
 }
 
 .three {
-  color: red;
+  color: salmon;
 }
-/*# sourceMappingURL=011_변수의_scope.css.map */

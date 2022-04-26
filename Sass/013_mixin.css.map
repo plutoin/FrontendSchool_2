@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AASA,AAAA,IAAI,CAAC;EACD,KAAK,EATI,GAAG;CAUf",
     "sources": [
-        "013_믹스인.scss"
+        "013_mixin.scss"
     ],
     "names": [],
-    "file": "013_믹스인.css"
+    "file": "013_mixin.css"
 }

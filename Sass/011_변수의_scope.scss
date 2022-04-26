@@ -1,13 +1,14 @@
-$value: green;
+$value: seagreen;
 
 .one {
-    $value: red !global;
+  $value: salmon !global;
+  color: $value;
+
+  .two {
     color: $value;
-    .two {
-        color: $value;
-    }
+  }
 }
 
 .three {
-    color: $value;
+  color: $value;
 }

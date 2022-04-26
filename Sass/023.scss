@@ -1,6 +1,3 @@
-// if문 예시 작성
-// Sass 공식문서
-// circle이 false면 사각형을, true이면 원형으로 스타일함
 @mixin avatar($size, $circle: false) {
     width: $size;
     height: $size;
