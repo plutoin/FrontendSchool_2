@@ -95,11 +95,24 @@
   // 4.(더 나아가기) user의 평균 나이를 구해 주세요.
   const userAge = user.map(i => i.age);
   const avgAge = userAge.reduce((i, j) => (i + j) / userAge.length);
-  console.log(parseInt(avgAge));
+  console.log('평균 나이', parseInt(avgAge));
 
   // 5.(더 나아가기) user의 성비를 구해 주세요.
+  // 성비 = (남자인구/여자인구) × 100
   const userGender = user.map(i => i.gender);
 
+  let male = 0;
+  let female = 0;
+
+  for (i = 0; i < userGender.length; i++) {
+    if (userGender[i] == 'male') {
+      male += 1;
+    } else {
+      female += 1;
+    }
+  }
+
+  console.log('성비', (male / female) * 100)
 </script>
 
 </html>
