@@ -200,7 +200,7 @@ for (let i of 'hello world') {
 // l
 // l
 // o
-// VM1368: 2
+// 
 // w
 // o
 // r
