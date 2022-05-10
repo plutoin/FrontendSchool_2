@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    // 1. `[10, 20, 30, 40]` 값의 평균을 구하는 함수를 만들어 주세요.
+    let data = [10, 20, 30, 40]
+    let sum = 0
+
+    function avg() {
+      for (let i = 0; i < data.length; i++) {
+        sum += data[i]
+      }
+      return sum / data.length
+    }
+
+    console.log(avg())
+
+    // 2. (나아가기) 숫자 단위 콤마를 찍는 함수를 만들어 주세요.
+
+    function comma(x) {
+      let num = x.toString().split('').reverse()
+      for (let i = 0; i < num.length; i++) {
+        if (i % 4 == 3) {
+          num.splice(i, 0, ',');
+        }
+      }
+      return num.reverse().join('')
+    }
+
+    console.log(comma(123456))
+
+    // function comma(x) {
+    //   let num = x.toString().split('').reverse()
+    //   for (i = 3; i < num.length; i+=4) {
+    //     num.splice(i, 0, ',')
+    //   }
+    //   return num.reverse().join('')
+    // }
+
+    // console.log(comma(123456))
+  </script>
+</body>
+
+</html>
