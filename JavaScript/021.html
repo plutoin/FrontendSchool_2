@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    .wrapper {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    .box {
+      width: 500px;
+      height: 500px;
+      background-color: salmon;
+    }
+
+    .btn-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .btn1 {
+      border: 3px solid salmon;
+    }
+
+    .btn2 {
+      border: 3px solid seagreen;
+    }
+
+    .btn3 {
+      border: 3px solid lightblue;
+    }
+
+    .salmon {
+      background-color: salmon;
+    }
+
+    .seagreen {
+      background-color: seagreen;
+    }
+
+    .lightblue {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box"></div>
+    <div class="btn-wrapper">
+      <button class="btn1">salmon</button>
+      <button class="btn2">seagreen</button>
+      <button class="btn3">lightblue</button>
+    </div>
+
+    <script>
+      const box = document.querySelector('.box')
+      const salmon = document.querySelector(".btn1")
+      const seagreen = document.querySelector(".btn2")
+      const lightblue = document.querySelector(".btn3")
+
+      // salmon.addEventListener("click", function () {
+      //   box.classList.add("salmon")
+      //   box.classList.remove("seagreen", "lightblue")
+      // })
+
+      // seagreen.addEventListener("click", function () {
+      //   box.classList.add("seagreen")
+      //   box.classList.remove("salmon", "lightblue")
+      // })
+
+      // lightblue.addEventListener("click", function () {
+      //   box.classList.add("lightblue")
+      //   box.classList.remove("salmon", "seagreen")
+      // })
+
+      const btnArr = [salmon, seagreen, lightblue]
+
+      btnArr.forEach((element) => {
+        element.addEventListener('click', () => {
+          box.classList.remove['salmon', 'seagreen', 'lightblue']
+          if (element.className == 'btn1') {
+            box.classList.add('salmon')
+            box.classList.remove('seagreen', 'lightblue')
+          } else if (element.className === 'btn2') {
+            box.classList.add('seagreen')
+            box.classList.remove('salmon', 'lightblue')
+          } else {
+            box.classList.add('lightblue')
+            box.classList.remove('salmon', 'seagreen')
+          }
+        })
+      })
+    </script>
+</body>
+
+</html>
