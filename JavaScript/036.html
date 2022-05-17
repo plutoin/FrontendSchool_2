@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    const me = {
+      name: '홍길동',
+      address: '서울특별시 마포구 와우산로',
+      age: 20,
+      hobby: function () {
+        console.log('영화 보기')
+        console.log('음악 디깅')
+        console.log('바이닐 수집')
+      },
+      vinyl: function (item) {
+        item.buy();
+      }
+    }
+
+    const item = {
+    item: 20,
+    buy : function(){
+        this.item++;
+    }
+}
+
+  </script>
+</body>
+
+</html>

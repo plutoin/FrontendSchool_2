@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+  <script>
+    const foods = ['치킨', '마라탕', '보쌈', '파스타'];
+
+    function FoodBot(foodNames){
+      this.menu = foodNames;
+      this.sayMenu = function() {
+        console.log(this.menu[Math.floor(Math.random() * this.menu.length)]);
+      }
+    }
+    const myMenu = new FoodBot(foods);
+
+    // const foods = ['치킨', '마라탕', '보쌈', '파스타'];
+
+    // function FoodBot(foodNames) {
+    //   this.menu = foodNames;
+    // }
+
+    // FoodBot.prototype.sayMenu = function () {
+    //   console.log(this.menu[Math.floor(Math.random() * this.menu.length)]);
+    // }
+    // const myMenu = new FoodBot(foods);
+  </script>
+</body>
+
+</html>

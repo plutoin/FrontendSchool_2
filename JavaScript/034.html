@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+  <!-- 1. P 태그를 클릭하면 p 태그의 컨텐츠를 출력하는 alert 창을 띄워주고
+  2. 삭제 버튼을 클릭하면 삭제할 것인지를 물어보는 confirm 창을 띄워주고, 확인을 누르면 P태그를 삭제합니다. -->
+  <h1>나의 todo list</h1>
+  <p>1. 오늘 저녁에는 부대찌게를 끓여 먹겠다.<button type="button">삭제</button></p>
+  <p>2. 후식으로 슈팅스타를 먹겠다.<button type="button">삭제</button></p>
+  <p>3. 자기 전에 반드시 내일 아침 메뉴를 생각해두겠다.<button type="button">삭제</button></p>
+
+  <script>
+    const p = document.querySelectorAll('p')
+    const rmBtn = document.querySelectorAll('button')
+
+    Array.prototype.forEach.call(p, (text) => {
+      text.addEventListener('click', (e) => {
+        alert(e.target.innerText.slice(0, -2))
+      })
+    })
+
+    for (const item of rmBtn) {
+      item.addEventListener('click', (e) => {
+        let result = confirm('삭제하시겠습니까?')
+        if (result == true) {
+          item.parentElement.remove();
+        }
+        e.stopPropagation();
+      })
+    }
+  </script>
+</body>
+
+</html>
