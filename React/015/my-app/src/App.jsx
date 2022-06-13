@@ -17,7 +17,7 @@ function App() {
         소개
       </Link>
       <Route path="/" exact component={Index} />
-      <Route path="/one" exact component={One} />ㄹ
+      <Route path="/one" exact component={One} />
       <Route path="/two" exact component={Two} />
       <Route path="/Three" exact component={Three} />
     </BrowserRouter>
